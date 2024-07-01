@@ -1,0 +1,1 @@
+这是一段Python的简易 基础的代码 用于便捷管理Windows PC上的Python_pip库，相比手动调用命令行效率更高
