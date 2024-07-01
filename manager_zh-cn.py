@@ -11,32 +11,32 @@ class PipManager:
             return result.stderr
 
     def list_installed_packages(self):
-        print("Listing installed packages...")
+        print("正在列出已安装包...")
         output = self.run_command("pip list")
         print(output)
 
     def install_package(self, package_name):
-        print(f"Installing package: {package_name}...")
+        print(f"正在安装: {package_name}...")
         output = self.run_command(f"pip install {package_name}")
         print(output)
 
     def uninstall_package(self, package_name):
-        print(f"Uninstalling package: {package_name}...")
+        print(f"正在卸载: {package_name}...")
         output = self.run_command(f"pip uninstall -y {package_name}")
         print(output)
 
     def update_package(self, package_name):
-        print(f"Updating package: {package_name}...")
+        print(f"正在更新: {package_name}...")
         output = self.run_command(f"pip install --upgrade {package_name}")
         print(output)
 
     def freeze_requirements(self, filename):
-        print(f"Freezing requirements to {filename}...")
+        print(f"正在保存至 {filename}...")
         output = self.run_command(f"pip freeze > {filename}")
         print(output)
 
     def install_requirements(self, filename):
-        print(f"Installing packages from {filename}...")
+        print(f"正在从本地文件安装 {filename}...")
         output = self.run_command(f"pip install -r {filename}")
         print(output)
 
