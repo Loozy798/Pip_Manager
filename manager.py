@@ -59,7 +59,7 @@ def main():
         if choice == '1':
             manager.list_installed_packages()
         elif choice == '2':
-            package_name = input("E键入要安装包的名称: ")
+            package_name = input("键入要安装包的名称: ")
             manager.install_package(package_name)
         elif choice == '3':
             package_name = input("键入要卸载包的名称: ")
